@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto formulario</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main>
+    <section class="container">
+      <h1>Preencha o formulário</h1>
+      <form>
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" placeholder="Digite seu nome">
+
+        <label for="idade">Idade</label>
+        <input type="number" name="idade" id="idade" placeholder="Digite sua idade">
+
+        <label for="genero">Gênero</label>
+        <select name="genero" id="genero">
+          <option value="masculino">masculino</option>
+          <option value="feminino">feminino</option>
+          <option value="outro">outro</option>
+        </select>
+
+        <label for="nascimento">Data de nascimento</label>
+      </form>
+      <input type="date" id="nascimento">
+
+      <label for="Telefone">Telefone</label>
+      <input type="number" name="telefone" id="telefone" placeholder="00000-0000">
+
+      <div class="div-btn">
+        <button id="btn-salvar" onclick="salvarDados()">Salvar</button>
+        <button id="btn-mostrar" onclick="mostrarDados()">Mostrar</button>
+        <button id="btn-limpar" onclick="limparDados()">Limpar</button>
+      </div>
+      <div id="mostrar-dados">
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
